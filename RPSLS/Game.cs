@@ -11,31 +11,41 @@ namespace RPSLS
 
         //Member Variables
 
-        //Rounds 
-        //players
-        //rules to the game
+        Player playerOne;
+        Player playerTwo;
 
-
+        public int scorekeeper;
+        public int rounds;
         
-        //scorekeep
+
+
+
+        //list of gestures 
         //
-        
-       
-
-
-
-     //Constructor (Spawner)
 
 
 
 
 
 
+        //Constructor (Spawner)
 
-     //Member Methods
+        public Game()
+        {
+
+        }
 
 
 
+
+
+        //Member Methods
+
+
+        public void DisplayRules()
+        {
+            Console.WriteLine(");
+        }
 
 
 
