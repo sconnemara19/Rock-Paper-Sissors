@@ -44,7 +44,7 @@ namespace RPSLS
 
         public void DisplayRules()
         {
-            Console.WriteLine(");
+            Console.WriteLine("");
         }
 
 
