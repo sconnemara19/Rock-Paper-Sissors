@@ -1,0 +1,6 @@
+C:\Users\simon\Desktop\Visual Studio\Rock-Paper-Sissors\RPSLS\obj\Debug\RPSLS.csprojAssemblyReference.cache
+C:\Users\simon\Desktop\Visual Studio\Rock-Paper-Sissors\RPSLS\bin\Debug\RPSLS.exe.config
+C:\Users\simon\Desktop\Visual Studio\Rock-Paper-Sissors\RPSLS\bin\Debug\RPSLS.exe
+C:\Users\simon\Desktop\Visual Studio\Rock-Paper-Sissors\RPSLS\bin\Debug\RPSLS.pdb
+C:\Users\simon\Desktop\Visual Studio\Rock-Paper-Sissors\RPSLS\obj\Debug\RPSLS.exe
+C:\Users\simon\Desktop\Visual Studio\Rock-Paper-Sissors\RPSLS\obj\Debug\RPSLS.pdb

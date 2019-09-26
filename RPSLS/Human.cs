@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Human:Player
+    class Human : Player
     {
 
         //Member variables
@@ -45,7 +45,7 @@ namespace RPSLS
         public override void ChooseName()
         {
             Console.WriteLine("Enter Name");
-        }
+        }   
 
 
 

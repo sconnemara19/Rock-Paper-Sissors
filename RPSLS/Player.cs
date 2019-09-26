@@ -32,7 +32,7 @@ namespace RPSLS
 
 
 
-        public abstract void ChooseName()
+        public abstract void ChooseName();
 
         
 

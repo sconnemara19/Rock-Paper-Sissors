@@ -9,19 +9,31 @@ namespace RPSLS
     class Game
     {
 
-        //Member Variables
+        ////Member Variables
 
-        Player playerOne;
-        Player playerTwo;
+           List<string> displayRules = new List<string>();
+            int numberOfPlayers = 0;
 
-        public int scorekeeper;
-        public int rounds;
+
+
+        //Player playerOne;
+        Human player = new Human();
         
 
 
 
-        //list of gestures 
-        //
+
+        
+        //Player playerTwo;
+
+        //public int scorekeeper;
+        //public int rounds;
+
+
+
+
+        ////list of gestures 
+        ////
 
 
 
@@ -30,10 +42,7 @@ namespace RPSLS
 
         //Constructor (Spawner)
 
-        public Game()
-        {
 
-        }
 
 
 
@@ -44,14 +53,35 @@ namespace RPSLS
 
         public void DisplayRules()
         {
-            Console.WriteLine("");
+            displayRules.Add("Rock crushes Scissors "); 
+            displayRules.Add("Scissors cuts Paper");
+            displayRules.Add("Paper covers Rock");
+            displayRules.Add("Rock crushes Lizard");
+            displayRules.Add("Lizard poisons Spock");
+            displayRules.Add("Spock smashes Scissors");
+            displayRules.Add("Scissors decapitates Lizard");
+            displayRules.Add("Lizard eats Paper");
+            displayRules.Add("Paper disproves Spock");
+            displayRules.Add("Spock vaporizes Rock");
+                Console.WriteLine( );
+
+
+
+
+
+
+
+
         }
 
 
 
 
 
+        public void RunGame()
+        {
 
+        }
 
 
 
