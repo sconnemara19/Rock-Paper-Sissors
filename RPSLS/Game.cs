@@ -10,9 +10,10 @@ namespace RPSLS
     {
 
         ////Member Variables
+        
+        Player playerOne = new Human();
+        Player playerTwo;
 
-        Computer playerOne = new Computer();
-       Human playerTwo = new Human();
         int numberofPlayers;
 
 
@@ -45,6 +46,11 @@ namespace RPSLS
             DisplayRules();
             int numberofPlayers = GetNumberPlayers();
             CreateNumberOfPlayers(numberofPlayers);
+            playerOne.ChooseGesture();
+            playerTwo.ChooseGesture();
+
+            
+            
 
             
         }
@@ -67,7 +73,7 @@ namespace RPSLS
         {
             if (numberofPlayers == 1)
             {
-                playerOne = new Computer();
+                playerTwo = new Computer();
 
             } 
             else if (numberofPlayers == 2)
@@ -76,6 +82,27 @@ namespace RPSLS
             }
         }
 
+
+
+        public void ComparingGestures()
+        {
+            if (playerOne.gesture == "Rock" && playerTwo.gesture == "Paper") 
+
+             
+            {
+                Console.WriteLine("Paper covers Rock");
+            }
+                
+            if (playerOne.gesture == "Paper" && playerTwo.gesture == "Sissors")
+            {
+                Console.WriteLine("Sissors cuts Paper");
+
+            }                
+        }
+    
     }
+
+
+
 }
 
