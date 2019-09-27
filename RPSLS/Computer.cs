@@ -32,11 +32,8 @@ namespace RPSLS
 
         public override void ChooseGesture()
         {
-            rng.Next(5);
-
-
-
-
+            int result =  rng.Next(4);
+            gesture = choices[result];
 
         }
 

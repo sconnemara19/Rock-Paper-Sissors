@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    abstract class  Player
+    abstract class Player
     {
         //Member Variables (Has A)
         //score
-        public int score;        
+        public int score;
         public string name;
-        public string Gesture;
+        public string gesture;
+        public List<string> choices;
 
-     
+
 
 
         //Constructor (Spawner)
@@ -23,22 +24,21 @@ namespace RPSLS
         {
             score = 0;
             name = null;
-            Gesture = null;
+            gesture = null;
+            choices = new List<string>() {"Rock", "Paper", "Sissors", "Lizard", "Spock"};
         }
 
         //Member Methods (Can Do)
 
-        public abstract void ChooseGesture();
+       
+
 
 
 
         public abstract void ChooseName();
 
-        
-
-       
-
-    
+        public abstract void ChooseGesture();
 
     }
+    
 }

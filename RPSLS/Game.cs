@@ -11,19 +11,18 @@ namespace RPSLS
 
         ////Member Variables
 
-           List<string> displayRules = new List<string>();
-            int numberOfPlayers = 0;
+        Computer playerOne = new Computer();
+       Human playerTwo = new Human();
+        int numberofPlayers;
 
+
+        //  int numberOfPlayers = 0;
 
 
         //Player playerOne;
-        Human player = new Human();
-        
 
 
 
-
-        
         //Player playerTwo;
 
         //public int scorekeeper;
@@ -31,59 +30,52 @@ namespace RPSLS
 
 
 
-
-        ////list of gestures 
-        ////
-
-
-
-
-
-
-        //Constructor (Spawner)
-
-
-
-
-
-
+        //Constructor (Spawner
+        public Game()
+        {
+            numberofPlayers = 0;
+        }
+       
+            
 
         //Member Methods
 
-
-        public void DisplayRules()
-        {
-            displayRules.Add("Rock crushes Scissors "); 
-            displayRules.Add("Scissors cuts Paper");
-            displayRules.Add("Paper covers Rock");
-            displayRules.Add("Rock crushes Lizard");
-            displayRules.Add("Lizard poisons Spock");
-            displayRules.Add("Spock smashes Scissors");
-            displayRules.Add("Scissors decapitates Lizard");
-            displayRules.Add("Lizard eats Paper");
-            displayRules.Add("Paper disproves Spock");
-            displayRules.Add("Spock vaporizes Rock");
-                Console.WriteLine( );
-
-
-
-
-
-
-
-
-        }
-
-
-
-
-
         public void RunGame()
         {
+            DisplayRules();
+            int numberofPlayers = GetNumberPlayers();
+            CreateNumberOfPlayers(numberofPlayers);
 
+            
+        }
+        public void DisplayRules()
+        {
+            Console.WriteLine("Rules of the Game\n: Rock crushes Scissors\n:Sissors cuts Paper\n:Paper covers Rock\n:Rock crushes Lizard\n:Spock smashes Scissors\n:Scissors decapitates Lizard\n:Lizard eats paper\n:Paper disproves Spock\n: Spock vaporizes Rock");
+            
         }
 
+        public int GetNumberPlayers()
+        {
+            Console.WriteLine("How Many Players, 1 or 2");
+            // Error handling
+            numberofPlayers = int.Parse(Console.ReadLine());
+            return numberofPlayers;
+        }
+        
+           
+        public void CreateNumberOfPlayers(int numberPlayer)
+        {
+            if (numberofPlayers == 1)
+            {
+                playerOne = new Computer();
 
+            } 
+            else if (numberofPlayers == 2)
+            {
+                playerTwo = new Human();
+            }
+        }
 
     }
 }
+

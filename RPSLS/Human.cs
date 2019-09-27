@@ -38,14 +38,18 @@ namespace RPSLS
         public override void ChooseGesture()
         {
             Console.WriteLine("Choose a gesture");
-            Gesture = Console.ReadLine();
-
+            gesture = Console.ReadLine();
+           
         }
 
         public override void ChooseName()
         {
             Console.WriteLine("Enter Name");
-        }   
+            name = Console.ReadLine();
+        
+        
+        } 
+
 
 
 
