@@ -39,7 +39,7 @@ namespace RPSLS
 
         public override void ChooseName()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Michael Scott");
         }
 
 

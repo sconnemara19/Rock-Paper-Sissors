@@ -37,7 +37,7 @@ namespace RPSLS
 
         public override void ChooseGesture()
         {
-            Console.WriteLine("Choose a gesture");
+            Console.WriteLine(name +"Choose a gesture");
             gesture = Console.ReadLine();
            
         }

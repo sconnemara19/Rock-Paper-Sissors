@@ -25,7 +25,7 @@ namespace RPSLS
             score = 0;
             name = null;
             gesture = null;
-            choices = new List<string>() {"Rock", "Paper", "Sissors", "Lizard", "Spock"};
+            choices = new List<string>() {"Rock", "Paper", "Scissors", "Lizard", "Spock"};
         }
 
         //Member Methods (Can Do)
