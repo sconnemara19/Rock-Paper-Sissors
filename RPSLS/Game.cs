@@ -197,10 +197,7 @@ namespace RPSLS
                 Console.WriteLine("Tie!");
                
             }
-            else
-            {
-                Console.WriteLine("Invaild Answer, Please try again");
-            }
+            
                   
         }
         public void GameWinner()
